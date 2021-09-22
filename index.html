@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Веб-плакат</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Main navigation -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav-site header__nav-site" aria-label="Main navigation">
+          <ul class="nav-site__list">
+            <li class="nav-site__item" data-type="snow-patches">
+              <svg class="nav-site__icon" width="45" height="45">
+                <use href="#snow-patches" />
+                <symbol id="snow-patches" viewBox="0 0 32 32">
+                  <path
+                    d="M14.688 15.351l-10.252-10.383 0.768-0.743 10.197 10.327v-14.552l1.068 0.004v14.637l10.586-10.235 0.747 0.759-10.537 10.186 14.523 0.001 0.003 1.067-14.549-0.001 10.175 10.305-0.768 0.743-10.18-10.311v14.64l-1.068-0.004v-14.636l-10.578 10.228-0.747-0.759 10.556-10.205-14.628-0.001-0.003-1.067 14.688 0.001z"
+                    fill="url(#paint0_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint0_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(22.3532 22.3553) rotate(-90) scale(22.3556 22.3532)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.503125" stop-color="#EEEEEE" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.45" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">снежные участки</span>
+            </li>
+            <li class="nav-site__item" data-type="light-underground">
+              <svg class="nav-site__icon" width="45" height="45">
+                <use href="#light-underground" />
+                <symbol id="light-underground" viewBox="0 0 33 32">
+                  <path
+                    d="M32.727 16c0-8.837-7.326-16-16.364-16s-16.364 7.163-16.364 16c0 8.837 7.326 16 16.364 16s16.364-7.163 16.364-16z"
+                    fill="url(#paint1_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint1_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(16 16) rotate(90) scale(22 22.5)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.455" stop-color="#EEEEEE" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.45" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">свет под землей</span>
+            </li>
+            <li class="nav-site__item" data-type="gems">
+              <svg class="nav-site__icon" width="38" height="46">
+                <use href="#gems" />
+                <symbol id="gems" viewBox="0 0 27 32">
+                  <path
+                    d="M8.293 0h9.629l8.033 11.457h-0.077l-12.257 20.142-13.55-20.142h-0.071l7.937-11.458h0.357zM2.6 10.096h4.024l5.119-8.734h-3.092l-6.051 8.734zM8.202 10.096h9.17l-4.458-8.041-4.712 8.040zM23.338 10.096l-6.124-8.734h-3.127l4.842 8.734h4.409zM13.563 29.074l0.061-0.1 4.375-16.204h-9.7l5.194 16.2 0.071 0.105zM23.485 12.769h-4.074l-3.25 12.039 7.326-12.039zM10.76 24.908l-3.89-12.139h-4.274l8.165 12.139z"
+                    fill="url(#paint2_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint2_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(19 18) rotate(89.8768) scale(28.4119 23.3373)"
+                >
+                  <stop stop-color="white" />
+                  <stop
+                    offset="0.586458"
+                    stop-color="white"
+                    stop-opacity="0.76"
+                  />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">драгоценные камни</span>
+            </li>
+            <li class="nav-site__item" data-type="lava-flow-points">
+              <svg class="nav-site__icon" width="46" height="47">
+                <use href="#lava-flow-points" />
+                <symbol id="lava-flow-points" viewBox="0 0 31 32">
+                  <path
+                    d="M11.397 2.725c0.485 0.331 0.84 0.696 1.031 1.087 0.23 0.469 0.447 1.085 0.638 1.722h-2.032l-11.034 26.009h30.344l-11.034-26.010h-1.683c0.177-0.527 0.394-1.013 0.657-1.381 0.574-0.804 1.802-1.524 3.007-2.061 0.56-0.259 1.262-0.528 1.983-0.756l0.136-0.037 0.038-0.011h0.002l-0.181-0.639-0.181-0.638h-0.002l-0.003 0.001-0.011 0.003-0.039 0.012c-0.348 0.103-0.564 0.175-0.778 0.251l0.128-0.040c-0.424 0.147-1.005 0.363-1.632 0.642-1.215 0.542-2.751 1.383-3.555 2.509-0.435 0.609-0.745 1.391-0.967 2.145h-0.217v-4.129h-1.333v4.13h-0.224c-0.227-0.798-0.507-1.645-0.827-2.297-0.329-0.673-0.887-1.199-1.48-1.605-0.597-0.409-1.27-0.723-1.887-0.96-0.639-0.253-1.405-0.481-2.196-0.645l-0.094-0.016-0.040-0.007-0.013-0.003h-0.005l-0.113 0.655-0.112 0.654h0.001l0.037 0.007c0.027 0.005 0.069 0.013 0.124 0.025 0.754 0.162 1.401 0.358 2.026 0.601l-0.089-0.031c0.559 0.214 1.127 0.484 1.607 0.813z"
+                    fill="url(#paint3_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint3_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(22.7582 20) rotate(89.4786) scale(26.5755 50)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.396269" stop-color="#EEEEEE" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.45" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">места протекания лавы</span>
+            </li>
+            <li class="nav-site__item" data-type="lakes">
+              <svg
+                class="nav-site__icon nav-site__icon--lake"
+                width="59"
+                height="39"
+              >
+                <use href="#lakes" />
+                <symbol id="lakes" viewBox="0 0 32 32">
+                  <path
+                    d="M30.185 0.377c7.843 1.187 21.412 3.289 17.547 10.176-2.177 3.88-6.88 2.153-10.235 5.087-4.414 3.861-2.646 9.527-7.311 13.084-9.893 7.541-27.76 1.292-29.977-10.903-2.412-13.269 16.567-19.474 29.977-17.444z"
+                    fill="url(#paint4_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint4_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(29.5 19.5) rotate(90) scale(19.5 29.5)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.503125" stop-color="#EEEEEE" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.45" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">озера</span>
+            </li>
+            <li class="nav-site__item" data-type="groundwater">
+              <svg class="nav-site__icon" width="26" height="47">
+                <use href="#groundwater" />
+                <symbol id="groundwater" viewBox="0 0 18 32">
+                  <path
+                    d="M8.44 0s12.901 18.795 8.252 26.454c-4.65 7.66-11.416 7.124-15.74 0s7.488-26.454 7.488-26.454z"
+                    fill="url(#paint5_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint5_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(9 12.5) rotate(90) scale(23.5 13)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.503125" stop-color="#EEEEEE" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.45" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">подземные воды</span>
+            </li>
+            <li class="nav-site__item" data-type="temp">
+              <svg class="nav-site__icon" width="20" height="45">
+                <use href="#temp" />
+                <symbol id="temp" viewBox="0 0 14 32">
+                  <path
+                    d="M9.963 4.872h-2.963v1.067h2.963v2.177h-2.963v1.067h2.963v10.395l0.444 0.32c1.538 1.122 2.526 2.917 2.526 4.944 0 0.008-0 0.017-0 0.025v-0.001c0 3.371-2.676 6.069-5.934 6.069s-5.934-2.698-5.934-6.069c-0-0.007-0-0.016-0-0.025 0-2.027 0.988-3.822 2.509-4.932l0.017-0.012 0.444-0.319v-16.021c0-1.375 1.114-2.489 2.489-2.489v0h0.949c1.375 0 2.489 1.114 2.489 2.489v0 1.316zM2.97 3.556v15.474c-1.808 1.318-2.97 3.428-2.97 5.81 0 0.009 0 0.017 0 0.026v-0.001c0 3.941 3.134 7.135 7 7.135s7-3.194 7-7.135c0-2.411-1.173-4.543-2.97-5.835v-15.475c0-1.964-1.592-3.556-3.556-3.556v0h-0.949c-1.964 0-3.556 1.592-3.556 3.556v0zM7.002 29.899c-0.002 0-0.004 0-0.007 0-1.118 0-2.149-0.376-2.972-1.008l0.012 0.009c-1.18-0.903-1.934-2.312-1.934-3.897 0-0.001 0-0.003 0-0.004v0c0-0.001 0-0.001 0-0.002 0-1.817 0.989-3.402 2.458-4.248l0.024-0.013v-6.62c0-1.335 1.083-2.418 2.418-2.418s2.418 1.083 2.418 2.418v0 6.62c1.494 0.858 2.485 2.445 2.485 4.263 0 2.706-2.194 4.9-4.9 4.9-0.001 0-0.002 0-0.003 0h0z"
+                    fill="url(#paint6_radial)"
+                  ></path>
+                </symbol>
+                <radialGradient
+                  id="paint6_radial"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(9.84375 22.5) rotate(90.1699) scale(95.2758 41.6832)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.505173" stop-color="#EEEEEE" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.45" />
+                </radialGradient>
+              </svg>
+              <span class="nav-site__label">температура</span>
+              <ul class="nav-site__palette">
+                <li class="nav-site__colouring"></li>
+                <li class="nav-site__colouring"></li>
+                <li class="nav-site__colouring"></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /Main navigation -->
+    <main>
+      <!-- Section Map -->
+      <section class="section map">
+        <div class="container map__container">
+          <div class="map__box">
+            <img class="map__img" src="./img/main-map.svg" alt="Main map" />
+
+            <div class="ellipses">
+              <div id="circle_kash_cave" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+              <div id="circle_tavd_cave" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_tavd_cave_right " class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_yama" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_yama_top" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_kakhin" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_kakhin_left" class="circle">
+                <div class="animation animation__gradient70"></div>
+              </div>
+
+              <div id="circle_mutn_volc" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_mutn_volc_left" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_mutn_volc_top" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_mal_sem" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_mal_sem_bottom" class="circle">
+                <div class="animation animation__gradient100"></div>
+              </div>
+
+              <div id="circle_vil_volc" class="circle">
+                <div class="animation animation__gradient50"></div>
+              </div>
+            </div>
+
+            <div class="map__inner">
+              <p
+                id="label_russa"
+                class="map__label"
+                data-type="snow-patches,light-underground"
+              >
+                Старая Русса
+              </p>
+
+              <p
+                id="label_cung_cave"
+                class="map__label"
+                data-type="snow-patches"
+              >
+                Кунгурская пещера
+              </p>
+
+              <p id="label_tavd_cave" class="map__label" data-type="gems,lakes">
+                Тавдинские пещеры
+              </p>
+
+              <p id="label_den_cave" class="map__label" data-type="groundwater">
+                Денисова пещера
+              </p>
+
+              <p id="label_kash_cave" class="map__label" data-type="gems">
+                Кашкулакская пещера
+              </p>
+
+              <p id="label_kakhin" class="map__label" data-type="groundwater">
+                Кахинайдаах
+              </p>
+
+              <p
+                id="label_yama"
+                class="map__label"
+                data-type="groundwater,light-underground"
+              >
+                Бездонная яма
+              </p>
+
+              <p
+                id="label_mutn_volc"
+                class="map__label"
+                data-type="lava-flow-points"
+              >
+                Мутновский вулкан
+              </p>
+
+              <p
+                id="label_gorely"
+                class="map__label"
+                data-type="lava-flow-points"
+              >
+                Горелый
+              </p>
+
+              <p
+                id="label_vil_volc"
+                class="map__label"
+                data-type="lava-flow-points"
+              >
+                Вилючинский вулкан
+              </p>
+
+              <p
+                id="label_mal_sem"
+                class="map__label"
+                data-type="lava-flow-points"
+              >
+                Малый Семячик
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Section Map -->
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

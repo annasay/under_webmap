@@ -1,0 +1,29 @@
+@mixin adaptive-size($range) {
+  $mobile: 320px;
+  $mobile-landscape: 475px;
+  $tablet: 1024px;
+  $tablet-landscape: 1366px;
+  $desktop: 1680px;
+
+  @if $range == mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $range == mobile-landscape {
+    @media screen and (min-width: $mobile-landscape) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else if $range == tablet-landscape {
+    @media screen and (min-width: $tablet-landscape) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.animation {
+  &__gradient100 {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #c4c4c4 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  }
+  &__gradient70 {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(196, 196, 196, 0.7) 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  }
+  &__gradient50 {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(196, 196, 196, 0.5) 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  }
+
+  border-radius: 50%;
+  //   height: 5em;
+  //   width: 5em;
+  width: 267px;
+  height: 267px;
+  animation: spin 5s, zoomInZoomOut 5s;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+
+  @include adaptive-size(mobile) {
+    width: 38.136vw;
+    height: 38.136vw;
+  }
+  @include adaptive-size(mobile-landscape) {
+    width: 27.013vw;
+    height: 27.013vw;
+  }
+
+  @include adaptive-size(tablet) {
+    width: 33.8457vw;
+    height: 33.8457vw;
+  }
+
+  @include adaptive-size(tablet-landscape) {
+    width: 19.068vw;
+    height: 19.068vw;
+  }
+
+  @include adaptive-size(desktop) {
+    width: 267px;
+    height: 267px;
+  }
+}
+
+@keyframes zoomInZoomOut {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

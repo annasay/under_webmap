@@ -1,0 +1,344 @@
+.container {
+  position: relative;
+}
+
+.nav-site {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  width: 100%;
+
+  background-color: #000000;
+  @include adaptive-size(tablet) {
+    background-color: #242424;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  @include adaptive-size(mobile) {
+    height: 65px;
+  }
+  @include adaptive-size(tablet) {
+    height: 154px;
+  }
+  @include adaptive-size(desktop) {
+    height: 147px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+
+    &:hover,
+    &:focus {
+      text-shadow: 0 0 10px #fff;
+    }
+    &--active {
+      text-shadow: 0 0 10px #fff;
+    }
+
+    @include adaptive-size(mobile) {
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+    }
+
+    @include adaptive-size(mobile-landscape) {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+    @include adaptive-size(tablet) {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+    @include adaptive-size(tablet-landscape) {
+      &:not(:last-child) {
+        margin-right: 83px;
+      }
+    }
+    @include adaptive-size(desktop) {
+      margin-bottom: 20px;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  &__icon {
+    @include adaptive-size(mobile) {
+      width: 26px;
+      height: 21px;
+      &--lake {
+        width: 42px;
+      }
+    }
+
+    @include adaptive-size(tablet) {
+      width: 87px;
+      height: 70px;
+      &--lake {
+        width: 142px;
+      }
+    }
+
+    @include adaptive-size(desktop) {
+      width: 59px;
+      height: 47px;
+      &--lake {
+        width: 95px;
+      }
+    }
+  }
+
+  &__label {
+    display: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #ffffff;
+
+    @include adaptive-size(desktop) {
+      display: inline-flex;
+    }
+  }
+}
+
+.nav-site__colouring {
+  border: 0.3px solid #ffffff;
+
+  &:first-child {
+    background-color: #c1c1c1;
+  }
+  &:nth-child(2) {
+    background-color: #565656;
+  }
+  &:last-child {
+    background-color: #000000;
+  }
+
+  @include adaptive-size(mobile) {
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+
+    margin-top: 3px;
+  }
+  @include adaptive-size(tablet) {
+    width: 17px;
+    height: 17px;
+    margin-left: 20px;
+
+    margin-top: 7px;
+  }
+  @include adaptive-size(desktop) {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+
+    margin-top: 6px;
+  }
+}
+
+.nav-site__list,
+.nav-site__palette {
+  list-style: none;
+}
+
+.map__container {
+  overflow: scroll;
+  cursor: grab;
+  scrollbar-width: none;
+
+  height: 100%;
+}
+.map__container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.map {
+  &__box {
+    position: relative;
+
+    @include adaptive-size(mobile) {
+      width: 240vw;
+    }
+    @include adaptive-size(mobile-landscape) {
+      width: 170vw;
+    }
+
+    @include adaptive-size(tablet) {
+      width: 213vw;
+    }
+
+    @include adaptive-size(tablet-landscape) {
+      width: 120vw;
+    }
+
+    @include adaptive-size(desktop) {
+      width: auto;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.map__label {
+  position: absolute;
+  z-index: 2;
+  padding: 8px 9px 8px 9px;
+  background: #ffffff;
+
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity, visibility;
+  transition: opacity 1s, visibility 0s 1s;
+
+  &--active {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8);
+    visibility: visible;
+    opacity: 1;
+    transition-property: opacity, visibility;
+    transition: opacity 1s, visibility 0s;
+  }
+}
+
+.circle {
+  position: absolute;
+}
+.animation {
+  margin-top: -50%;
+  margin-left: -50%;
+}
+.ellipses {
+  overflow: hidden;
+}
+
+#circle_kash_cave {
+  top: 92.2%;
+  left: 25.9%;
+}
+#circle_tavd_cave {
+  top: 65.2%;
+  left: 20.9%;
+}
+#circle_tavd_cave_right {
+  top: 73.5%;
+  left: 38.2%;
+}
+#circle_yama {
+  top: 80.1%;
+  left: 55.4%;
+}
+#circle_yama_top {
+  top: 60.5%;
+  left: 61.1%;
+}
+#circle_kakhin {
+  top: 42.3%;
+  left: 55.1%;
+}
+#circle_kakhin_left {
+  top: 31.3%;
+  left: 38.1%;
+}
+#circle_mutn_volc {
+  top: 15.3%;
+  left: 67.8%;
+}
+#circle_mutn_volc_left {
+  top: 19.3%;
+  left: 46.8%;
+}
+#circle_mutn_volc_top {
+  top: 5.3%;
+  left: 49.8%;
+}
+#circle_mal_sem {
+  top: 9.8%;
+  left: 88.4%;
+}
+#circle_mal_sem_bottom {
+  top: 32.9%;
+  left: 95.4%;
+}
+#circle_vil_volc {
+  top: 37.3%;
+  left: 66.8%;
+}
+
+/*Labels*/
+#label_russa {
+  top: 39.4%;
+  left: 12.5%;
+}
+
+#label_cung_cave {
+  top: 50%;
+  left: 25.3%;
+}
+
+#label_tavd_cave {
+  top: 78.2%;
+  left: 14.9%;
+}
+
+#label_den_cave {
+  top: 88%;
+  left: 8.5%;
+}
+
+#label_kash_cave {
+  top: 89.6%;
+  left: 31.1%;
+}
+
+#label_kakhin {
+  top: 40.3%;
+  left: 51.1%;
+}
+
+#label_yama {
+  top: 85.6%;
+  left: 61.4%;
+}
+
+#label_mutn_volc {
+  top: 19.3%;
+  left: 59.8%;
+}
+
+#label_gorely {
+  top: 24.9%;
+  left: 71.1%;
+}
+
+#label_vil_volc {
+  top: 31.3%;
+  left: 69.8%;
+}
+
+#label_mal_sem {
+  top: 17.8%;
+  left: 81.4%;
+}
